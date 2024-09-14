@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PortfolioController;
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -14,10 +15,11 @@ use Inertia\Inertia;
 //     ]);
 // });
 
-Route::get('/', function () {
-    return Inertia::render('Portfolio');
-});
+// Route::get('/', function () {
+//     return Inertia::render('Portfolio');
+// });
 
+Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

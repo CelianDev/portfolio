@@ -25,7 +25,7 @@
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <Popover class="relative">
+        <!-- <Popover class="relative">
           <PopoverButton
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
@@ -93,20 +93,20 @@
               </div>
             </PopoverPanel>
           </transition>
-        </Popover>
+        </Popover> -->
 
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
+          CV
+        </a>
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Features</a
-        >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Marketplace</a
+          >Compétences BTS SIO</a
         >
 
         <Popover class="relative">
           <PopoverButton
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
-            Company
+            Réalisation Pro
             <ChevronDownIcon
               class="h-5 w-5 flex-none text-gray-400"
               aria-hidden="true"
@@ -134,12 +134,17 @@
             </PopoverPanel>
           </transition>
         </Popover>
-      </PopoverGroup>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Log in <span aria-hidden="true">&rarr;</span></a
+          >Veille Technologique</a
         >
-      </div>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+          >Cybersecurité</a
+        >
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+          >Mes Projets</a
+        >
+      </PopoverGroup>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
     </nav>
     <Dialog
       class="lg:hidden"
@@ -171,7 +176,7 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <Disclosure as="div" class="-mx-3" v-slot="{ open }">
+              <!-- <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                 <DisclosureButton
                   class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -191,24 +196,24 @@
                     >{{ item.name }}</DisclosureButton
                   >
                 </DisclosurePanel>
-              </Disclosure>
+              </Disclosure> -->
 
               <a
                 href="#"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Features</a
+                >CV</a
               >
               <a
                 href="#"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Marketplace</a
+                >Compétences BTS SIO</a
               >
 
               <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                 <DisclosureButton
                   class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Réalisation Pro
                   <ChevronDownIcon
                     :class="[open ? 'rotate-180' : '', 'h-5 w-5 flex-none']"
                     aria-hidden="true"
@@ -225,13 +230,24 @@
                   >
                 </DisclosurePanel>
               </Disclosure>
-            </div>
-            <div class="py-6">
               <a
                 href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Log in</a
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               >
+                Veille Technologique
+              </a>
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              >
+                Cybersecurité
+              </a>
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              >
+                Mes Projets
+              </a>
             </div>
           </div>
         </div>
@@ -305,11 +321,8 @@ const callsToAction = [
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 const company = [
-  { name: "About us", href: "#" },
-  { name: "Careers", href: "#" },
-  { name: "Support", href: "#" },
-  { name: "Press", href: "#" },
-  { name: "Blog", href: "#" },
+  { name: "Réalisation professionelles en entreprise", href: "#" },
+  { name: "Réalisation professionelles en centre", href: "#" },
 ];
 
 const mobileMenuOpen = ref(false);
