@@ -15,4 +15,12 @@ class PortfolioController extends Controller
             'title' => 'Home',
         ]);
     }
+
+    public function cv(Request $request): Response
+    {
+        return Inertia::render('Portfolio', [
+            'content' => 'cv',
+            'title' => 'CV',
+        ]);
+    }
 }

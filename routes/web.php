@@ -20,6 +20,7 @@ use App\Http\Controllers\PortfolioController;
 // });
 
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
+Route::get('/CV', [PortfolioController::class, 'cv'])->name('portfolio.cv');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
