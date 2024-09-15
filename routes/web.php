@@ -21,6 +21,8 @@ use App\Http\Controllers\PortfolioController;
 
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/CV', [PortfolioController::class, 'cv'])->name('portfolio.cv');
+Route::get('/Compétences-BTS-SIO', [PortfolioController::class, 'competences'])->name('portfolio.competences');
+Route::get('/Cybersécurité', [PortfolioController::class, 'cybersecurite'])->name('portfolio.cybersecurite');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

@@ -1,4 +1,3 @@
-<!-- IntersectionObserver.vue -->
 <template>
   <div ref="observerRef">
     <slot :isIntersecting="isIntersecting"></slot>
@@ -6,17 +5,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
-// Props pour le seuil d'intersection et le rootMargin
 const props = defineProps({
   threshold: {
     type: Number,
-    default: 0.1, // Valeur par défaut si rien n'est fourni
+    default: 0.1,
   },
   rootMargin: {
     type: String,
-    default: "0px", // Pas de marge par défaut
+    default: "0px",
   },
 });
 
@@ -31,8 +29,8 @@ onMounted(() => {
       isIntersecting.value = entry.isIntersecting;
     },
     {
-      threshold: props.threshold, // Utilisation de la prop threshold
-      rootMargin: props.rootMargin, // Utilisation de la prop rootMargin
+      threshold: props.threshold,
+      rootMargin: props.rootMargin,
     }
   );
 

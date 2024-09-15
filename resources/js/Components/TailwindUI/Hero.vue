@@ -9,7 +9,7 @@
     />
   </IntersectionObserver>
 
-  <div class="relative lg:h-[calc(100vh-100px)]">
+  <div class="relative lg:h-[calc(100vh-100px)] overflow-hidden">
     <div class="mx-auto lg:h-[calc(100vh-100px)] max-w-7xl">
       <IntersectionObserver v-slot="{ isIntersecting }">
         <div
@@ -18,8 +18,9 @@
             isIntersecting ? '' : 'animate__animated animate__fadeOutLeft',
           ]"
         >
+          <!-- Ajout de max-w-full et overflow-hidden -->
           <svg
-            class="absolute lg:h-[calc(100vh-100px)] inset-y-0 right-8 hidden w-80 translate-x-1/2 transform fill-white lg:block"
+            class="absolute lg:h-[calc(100vh-100px)] inset-y-0 right-8 hidden w-80 max-w-full translate-x-1/2 transform fill-white lg:block"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
             aria-hidden="true"
@@ -115,7 +116,7 @@
 </template>
 
 <script setup>
-import { Link, usePage } from "@inertiajs/vue3";
+import { Link } from "@inertiajs/vue3";
 import "animate.css";
 import CircleProfile from "@/Components/Mine/CircleProfile.vue";
 import IntersectionObserver from "@/Directives/IntersectionObserver.vue";

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-0 sm:py-12 lg:py-24">
+  <div class="bg-white pt-0 pb-12 sm:py-12 lg:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <!-- Titre et description -->
       <IntersectionObserver v-slot="{ isIntersecting }">
@@ -39,15 +39,18 @@
       </IntersectionObserver>
     </div>
 
-    <!-- Image -->
+    <!-- Image avec animation venant du bas -->
     <IntersectionObserver v-slot="{ isIntersecting }">
       <div
         class="relative pt-16 animate__animated"
-        :class="isIntersecting ? 'animate__fadeIn' : 'animate__fadeOut'"
+        :class="isIntersecting ? 'animate__fadeInUp' : 'animate__fadeOutDown'"
+        :style="
+          isIntersecting ? 'animation-delay: 0.2s; animation-duration: 1s;' : ''
+        "
       >
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
           <img
-            src="http://127.0.0.1:8000/storage/images/CV_Celian_Kouas_2.png"
+            src="http://127.0.0.1:8000/storage/images/CV_Celian_Kouas.png"
             alt="Aperçu du CV"
             class="w-[100%] lg:w-[50%] rounded-xl shadow-2xl ring-1 ring-gray-900/10 relative z-10"
           />

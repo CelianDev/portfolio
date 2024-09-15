@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl">
+  <div class="mx-auto max-w-7xl overflow-hidden">
     <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <!-- Utilisation de IntersectionObserver pour le titre et les paragraphes -->
@@ -42,24 +42,30 @@
 
       <!-- Grille pour afficher les éléments de stack -->
       <div
-        class="pt-20 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-16"
+        class="pt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-12"
       >
         <!-- Boucle v-for pour générer dynamiquement les div -->
-        <div v-for="(item, index) in stack" :key="index">
+        <div
+          v-for="(item, index) in stack"
+          :key="index"
+          class="flex justify-center items-center flex-col"
+        >
           <!-- Utilisation de IntersectionObserver pour chaque div -->
           <IntersectionObserver v-slot="{ isIntersecting }">
             <div
-              class="flex justify-center items-center flex-col"
+              class="flex justify-center items-center flex-col w-full max-w-[200px]"
               :class="
                 isIntersecting
                   ? 'animate__animated animate__fadeInUp'
                   : 'animate__animated animate__fadeOutDown'
               "
-              :style="isIntersecting ? `animation-delay: ${index * 0.1}s;` : ''"
+              :style="
+                isIntersecting ? `animation-delay: ${index * 0.07}s;` : ''
+              "
             >
               <img
                 :src="item.src"
-                class="inline-block h-24 w-auto object-cover object-center"
+                class="inline-block h-20 w-auto object-cover object-center"
                 :alt="item.title"
               />
               <h4
@@ -129,6 +135,14 @@ const stack = reactive([
   {
     title: "Jira",
     src: "http://127.0.0.1:8000/storage/images/jira.png",
+  },
+  {
+    title: "Docker",
+    src: "http://127.0.0.1:8000/storage/images/docker.png",
+  },
+  {
+    title: "Raspberry Pi",
+    src: "http://127.0.0.1:8000/storage/images/raspberry.png",
   },
 ]);
 </script>

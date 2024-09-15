@@ -23,4 +23,20 @@ class PortfolioController extends Controller
             'title' => 'CV',
         ]);
     }
+
+    public function competences(Request $request): Response
+    {
+        return Inertia::render('Portfolio', [
+            'content' => 'competences',
+            'title' => 'Compétences',
+        ]);
+    }
+
+    public function cybersecurite(Request $request): Response
+    {
+        return Inertia::render('Portfolio', [
+            'content' => 'cybersecurite',
+            'title' => 'Compétences',
+        ]);
+    }
 }
