@@ -30,7 +30,7 @@
           :class="isIntersecting ? 'animate__fadeInUp' : 'animate__fadeOutDown'"
         >
           <a
-            href="http://127.0.0.1:8000/storage/documents/Celian_Kouas_Tableau_de_synthese.pdf"
+            href="/documents/Celian_Kouas_Tableau_de_synthese.pdf"
             download
             class="inline-block rounded-md bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(0,0,0,0.5)] hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 relative z-10"
           >
@@ -51,7 +51,7 @@
       >
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
           <img
-            src="http://127.0.0.1:8000/storage/images/Celian_Kouas_Tableau_de_synthese.png"
+            src="/images/Celian_Kouas_Tableau_de_synthese.png"
             alt="Tableau de synthèse des réalisations professionnelles"
             class="w-[100%] lg:w-[80%] rounded-xl shadow-2xl ring-1 ring-gray-900/10 relative z-10"
           />

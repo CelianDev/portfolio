@@ -88,61 +88,19 @@ import IntersectionObserver from "@/Directives/IntersectionObserver.vue"; // Ass
 
 // Données réactives de la stack
 const stack = reactive([
-  {
-    title: "Laravel",
-    src: "http://127.0.0.1:8000/storage/images/laravel.png",
-  },
-  {
-    title: "Vue.js",
-    src: "http://127.0.0.1:8000/storage/images/vue.png",
-  },
-  {
-    title: "React",
-    src: "http://127.0.0.1:8000/storage/images/react.png",
-  },
-  {
-    title: "Tailwind/Bootstrap",
-    src: "http://127.0.0.1:8000/storage/images/tailwind.png",
-  },
-  {
-    title: "HTML5",
-    src: "http://127.0.0.1:8000/storage/images/html.png",
-  },
-  {
-    title: "CSS3",
-    src: "http://127.0.0.1:8000/storage/images/css.png",
-  },
-  {
-    title: "JS",
-    src: "http://127.0.0.1:8000/storage/images/js.png",
-  },
-  {
-    title: "PHP",
-    src: "http://127.0.0.1:8000/storage/images/php.png",
-  },
-  {
-    title: "SQL",
-    src: "http://127.0.0.1:8000/storage/images/sql.png",
-  },
-  {
-    title: "Python",
-    src: "http://127.0.0.1:8000/storage/images/python.png",
-  },
-  {
-    title: "Git",
-    src: "http://127.0.0.1:8000/storage/images/git.png",
-  },
-  {
-    title: "Jira",
-    src: "http://127.0.0.1:8000/storage/images/jira.png",
-  },
-  {
-    title: "Docker",
-    src: "http://127.0.0.1:8000/storage/images/docker.png",
-  },
-  {
-    title: "Raspberry Pi",
-    src: "http://127.0.0.1:8000/storage/images/raspberry.png",
-  },
+  { title: "Laravel", src: "/images/laravel.png" },
+  { title: "Vue.js", src: "/images/vue.png" },
+  { title: "React", src: "/images/react.png" },
+  { title: "Tailwind/Bootstrap", src: "/images/tailwind.png" },
+  { title: "HTML5", src: "/images/html.png" },
+  { title: "CSS3", src: "/images/css.png" },
+  { title: "JS", src: "/images/js.png" },
+  { title: "PHP", src: "/images/php.png" },
+  { title: "SQL", src: "/images/sql.png" },
+  { title: "Python", src: "/images/python.png" },
+  { title: "Git", src: "/images/git.png" },
+  { title: "Jira", src: "/images/jira.png" },
+  { title: "Docker", src: "/images/docker.png" },
+  { title: "Raspberry Pi", src: "/images/raspberry.png" },
 ]);
 </script>

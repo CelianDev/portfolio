@@ -15,7 +15,7 @@
             ]"
           >
             <img
-              src="http://127.0.0.1:8000/storage/images/aristee.jpg"
+              src="/images/aristee.jpg"
               alt="Photo de l'école Aristée Valgora La Valette"
               class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
               width="2432"

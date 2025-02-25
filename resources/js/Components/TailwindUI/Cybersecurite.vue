@@ -40,7 +40,7 @@
       >
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
           <img
-            src="http://127.0.0.1:8000/storage/images/Certificat_ANSSI_CK.png"
+            src="/images/Certificat_ANSSI_CK.png"
             alt="Certificat de Suivi SecNumacadémie"
             class="w-[100%] lg:w-[80%] rounded-xl shadow-2xl ring-1 ring-gray-900/10 relative z-10"
           />
@@ -121,38 +121,28 @@ import { ref } from "vue"; // Ref for reactivity
 // Galleria images (Replace with your own URLs)
 const images = ref([
   {
-    itemImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_1_CK.png",
-    thumbnailImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_1_CK.png",
+    itemImageSrc: "/images/Certificat_Module_1_CK.png",
+    thumbnailImageSrc: "/images/Certificat_Module_1_CK.png",
     alt: "Certificat RGPD Module 1",
   },
   {
-    itemImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_2_CK.png",
-    thumbnailImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_2_CK.png",
+    itemImageSrc: "/images/Certificat_Module_2_CK.png",
+    thumbnailImageSrc: "/images/Certificat_Module_2_CK.png",
     alt: "Certificat RGPD Module 2",
   },
   {
-    itemImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_3_CK.png",
-    thumbnailImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_3_CK.png",
+    itemImageSrc: "/images/Certificat_Module_3_CK.png",
+    thumbnailImageSrc: "/images/Certificat_Module_3_CK.png",
     alt: "Certificat RGPD Module 3",
   },
   {
-    itemImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_4_CK.png",
-    thumbnailImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_4_CK.png",
+    itemImageSrc: "/images/Certificat_Module_4_CK.png",
+    thumbnailImageSrc: "/images/Certificat_Module_4_CK.png",
     alt: "Certificat RGPD Module 4",
   },
   {
-    itemImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_5_CK.png",
-    thumbnailImageSrc:
-      "http://127.0.0.1:8000/storage/images/Certificat_Module_5_CK.png",
+    itemImageSrc: "/images/Certificat_Module_5_CK.png",
+    thumbnailImageSrc: "/images/Certificat_Module_5_CK.png",
     alt: "Certificat RGPD Module 5",
   },
 ]);

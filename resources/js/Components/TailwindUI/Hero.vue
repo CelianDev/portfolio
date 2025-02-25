@@ -107,7 +107,7 @@
       >
         <img
           class="aspect-[3/2] hidden lg:block object-cover lg:aspect-auto lg:h-full lg:w-full"
-          src="http://127.0.0.1:8000/storage/images/me_v4.jpg"
+          src="/images/me_v4.jpg"
           alt=""
         />
       </div>
