@@ -29,7 +29,7 @@
           :class="isIntersecting ? 'animate__fadeInUp' : 'animate__fadeOutDown'"
         >
           <a
-            href="/documents/CV_Celian_Kouas.pdf"
+            href="/documents/CV_CK_web.pdf"
             download
             class="inline-block rounded-md bg-red-600 px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(0,0,0,0.5)] hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 relative z-10"
           >
@@ -50,7 +50,7 @@
       >
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center">
           <img
-            src="/images/CV_Celian_Kouas.png"
+            src="/images/CV_CK_web.png"
             alt="Aperçu du CV"
             class="w-[100%] lg:w-[50%] rounded-xl shadow-2xl ring-1 ring-gray-900/10 relative z-10"
           />
