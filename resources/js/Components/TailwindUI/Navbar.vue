@@ -110,7 +110,7 @@
           >
             <span class="sr-only">Your Portfolio</span>
             <div
-              class="h-8 w-8 flex items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-orange-500 shadow-md"
+              class="h-10 w-10 flex items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-orange-500 shadow-md"
             >
               <span class="text-white font-bold text-lg">CK</span>
             </div>
