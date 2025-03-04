@@ -48,22 +48,22 @@ const navigation = {
       name: "Compétences BTS SIO",
       href: route("portfolio.competences"),
     },
-    {
-      name: "Réalisation Pro",
-      href: "#",
-    },
-    {
-      name: "Veille Technologique",
-      href: "#",
-    },
+    // {
+    //   name: "Réalisation Pro",
+    //   href: "#",
+    // },
+    // {
+    //   name: "Veille Technologique",
+    //   href: "#",
+    // },
     {
       name: "Cybersécurité",
       href: route("portfolio.cybersecurite"),
     },
-    {
-      name: "Mes Projets",
-      href: "#",
-    },
+    // {
+    //   name: "Mes Projets",
+    //   href: "#",
+    // },
   ],
   social: [
     {

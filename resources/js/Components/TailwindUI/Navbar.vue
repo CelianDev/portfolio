@@ -41,7 +41,7 @@
           Compétences BTS SIO
         </Link>
 
-        <Popover class="relative">
+        <!-- <Popover class="relative">
           <PopoverButton
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
@@ -78,19 +78,19 @@
           class="text-sm font-semibold leading-6 text-gray-900"
         >
           Veille Technologique
-        </Link>
+        </Link> -->
         <Link
           :href="route('portfolio.cybersecurite')"
           class="text-sm font-semibold leading-6 text-gray-900"
         >
           Cybersécurité
         </Link>
-        <Link
+        <!-- <Link
           href="{{ route('portfolio.index') }}"
           class="text-sm font-semibold leading-6 text-gray-900"
         >
           Mes Projets
-        </Link>
+        </Link> -->
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
     </nav>
@@ -138,7 +138,7 @@
                 >Compétences BTS SIO</Link
               >
 
-              <Disclosure as="div" class="-mx-3" v-slot="{ open }">
+              <!-- <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                 <DisclosureButton
                   class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -164,19 +164,19 @@
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               >
                 Veille Technologique
-              </Link>
+              </Link> -->
               <Link
                 :href="route('portfolio.cybersecurite')"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               >
                 Cybersécurité
               </Link>
-              <Link
+              <!-- <Link
                 href="{{ route('portfolio.index') }}"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               >
                 Mes Projets
-              </Link>
+              </Link> -->
             </div>
           </div>
         </div>
@@ -250,10 +250,10 @@ const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
-const company = [
-  { name: "Réalisation professionelles en entreprise", href: "#" },
-  { name: "Réalisation professionelles en centre", href: "#" },
-];
+// const company = [
+//   { name: "Réalisation professionelles en entreprise", href: "#" },
+//   { name: "Réalisation professionelles en centre", href: "#" },
+// ];
 
 const mobileMenuOpen = ref(false);
 </script>
