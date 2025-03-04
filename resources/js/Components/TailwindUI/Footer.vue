@@ -27,7 +27,7 @@
         </Link>
       </div>
       <p class="mt-10 text-center text-xs leading-5 text-gray-500">
-        &copy; 2024 Célian Kouas - Développeur Web Full Stack. Tous droits
+        &copy; 2025 Célian Kouas - Développeur Web Full Stack. Tous droits
         réservés.
       </p>
     </div>
@@ -64,6 +64,10 @@ const navigation = {
     //   name: "Mes Projets",
     //   href: "#",
     // },
+    {
+      name: "Contact",
+      href: route("portfolio.contact"),
+    },
   ],
   social: [
     {

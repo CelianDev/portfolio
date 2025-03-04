@@ -39,4 +39,12 @@ class PortfolioController extends Controller
             'title' => 'Compétences',
         ]);
     }
+
+    public function contact(Request $request): Response
+    {
+        return Inertia::render('Portfolio', [
+            'content' => 'contact',
+            'title' => 'Contact',
+        ]);
+    }
 }

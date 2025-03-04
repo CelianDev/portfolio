@@ -91,6 +91,12 @@
         >
           Mes Projets
         </Link> -->
+        <Link
+          :href="route('portfolio.contact')"
+          class="text-sm font-semibold leading-6 text-gray-900"
+        >
+          Contact
+        </Link>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
     </nav>
@@ -177,6 +183,12 @@
               >
                 Mes Projets
               </Link> -->
+              <Link
+                :href="route('portfolio.contact')"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </div>

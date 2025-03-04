@@ -85,9 +85,9 @@
                   Voir mon CV
                 </Link>
                 <a
-                  href="#"
+                  :href="route('portfolio.contact')"
                   class="text-sm font-semibold leading-6 text-gray-900"
-                  >Me contacter <span aria-hidden="true">→</span></a
+                  >Contact <span aria-hidden="true">→</span></a
                 >
               </div>
             </div>

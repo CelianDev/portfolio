@@ -28,6 +28,10 @@
         <div v-if="content === 'cybersecurite'" key="cv">
           <Cybersecurite />
         </div>
+        <!-- Section Portfolio -->
+        <div v-if="content === 'contact'" key="contact">
+          <Contact />
+        </div>
       </div>
     </transition>
 
@@ -46,6 +50,7 @@ import scrollTop from "@/Components/Mine/ScrollTop.vue";
 import CvSection from "@/Components/TailwindUI/CvSection.vue";
 import CompetencesBtsSio from "@/Components/TailwindUI/CompetencesBtsSio.vue";
 import Cybersecurite from "@/Components/TailwindUI/Cybersecurite.vue";
+import Contact from "@/Components/TailwindUI/Contact.vue";
 
 import { usePage } from "@inertiajs/vue3";
 import "animate.css";

@@ -5,6 +5,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\MailController;
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -23,6 +24,9 @@ Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/CV', [PortfolioController::class, 'cv'])->name('portfolio.cv');
 Route::get('/Compétences-BTS-SIO', [PortfolioController::class, 'competences'])->name('portfolio.competences');
 Route::get('/Cybersécurité', [PortfolioController::class, 'cybersecurite'])->name('portfolio.cybersecurite');
+Route::get('/Contact', [PortfolioController::class, 'contact'])->name('portfolio.contact');
+
+Route::post('/Contact', [MailController::class, 'send'])->name('mail.send');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
