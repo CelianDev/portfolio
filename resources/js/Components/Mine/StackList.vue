@@ -90,11 +90,12 @@ import IntersectionObserver from "@/Directives/IntersectionObserver.vue"; // Ass
 const stack = reactive([
   { title: "Laravel", src: "/images/laravel.png" },
   { title: "Vue.js", src: "/images/vue.png" },
-  { title: "React", src: "/images/react.png" },
-  { title: "Tailwind/Bootstrap", src: "/images/tailwind.png" },
+  { title: "Flutter", src: "/images/flutter.png" },
+  { title: "FastAPI", src: "/images/fastapi.png" },
   { title: "HTML5", src: "/images/html.png" },
   { title: "CSS3", src: "/images/css.png" },
   { title: "JS", src: "/images/js.png" },
+  { title: "Tailwind/Bootstrap", src: "/images/tailwind.png" },
   { title: "PHP", src: "/images/php.png" },
   { title: "SQL", src: "/images/sql.png" },
   { title: "Python", src: "/images/python.png" },
@@ -102,5 +103,6 @@ const stack = reactive([
   { title: "Jira", src: "/images/jira.png" },
   { title: "Docker", src: "/images/docker.png" },
   { title: "Raspberry Pi", src: "/images/raspberry.png" },
+  { title: "VS Code", src: "/images/vsc.png" },
 ]);
 </script>

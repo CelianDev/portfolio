@@ -121,7 +121,7 @@ const features = [
   {
     name: "Compétences techniques",
     description:
-      "Maîtrise de nombreux langages ainsi que de frameworks comme Laravel, Vue.js, et React.",
+      "Maîtrise de nombreux langages ainsi que de frameworks comme Laravel, Vue.js, et Flutter.",
     icon: CodeBracketIcon,
   },
   {
