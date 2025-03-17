@@ -41,7 +41,7 @@
           Compétences BTS SIO
         </Link>
 
-        <!-- <Popover class="relative">
+        <Popover class="relative">
           <PopoverButton
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
@@ -66,14 +66,14 @@
               <Link
                 v-for="item in company"
                 :key="item.name"
-                :href="route('portfolio.index')"
+                :href="item.href"
                 class="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50"
                 >{{ item.name }}</Link
               >
             </PopoverPanel>
           </transition>
         </Popover>
-        <Link
+        <!-- <Link
           href="{{ route('portfolio.index') }}"
           class="text-sm font-semibold leading-6 text-gray-900"
         >
@@ -144,7 +144,7 @@
                 >Compétences BTS SIO</Link
               >
 
-              <!-- <Disclosure as="div" class="-mx-3" v-slot="{ open }">
+              <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                 <DisclosureButton
                   class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -159,13 +159,13 @@
                     v-for="item in company"
                     :key="item.name"
                     as="Link"
-                    :href="route('portfolio.index')"
+                    :href="item.href"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >{{ item.name }}</DisclosureButton
                   >
                 </DisclosurePanel>
               </Disclosure>
-              <Link
+              <!-- <Link
                 href="{{ route('portfolio.index') }}"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
               >
@@ -262,10 +262,13 @@ const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
-// const company = [
-//   { name: "Réalisation professionelles en entreprise", href: "#" },
-//   { name: "Réalisation professionelles en centre", href: "#" },
-// ];
+const company = [
+  {
+    name: "Réalisation pro en entreprise",
+    href: route("portfolio.proEntreprise"),
+  },
+  { name: "Réalisation pro en centre", href: route("portfolio.proCentre") },
+];
 
 const mobileMenuOpen = ref(false);
 </script>

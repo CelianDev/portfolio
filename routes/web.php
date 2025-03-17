@@ -25,7 +25,8 @@ Route::get('/CV', [PortfolioController::class, 'cv'])->name('portfolio.cv');
 Route::get('/Compétences-BTS-SIO', [PortfolioController::class, 'competences'])->name('portfolio.competences');
 Route::get('/Cybersécurité', [PortfolioController::class, 'cybersecurite'])->name('portfolio.cybersecurite');
 Route::get('/Contact', [PortfolioController::class, 'contact'])->name('portfolio.contact');
-
+Route::get('/Réalisation-Pro-Entreprise', [PortfolioController::class, 'proEntreprise'])->name('portfolio.proEntreprise');
+Route::get('/Réalisation-Pro-Centre', [PortfolioController::class, 'proCentre'])->name('portfolio.proCentre');
 Route::post('/Contact', [MailController::class, 'send'])->name('mail.send');
 
 Route::get('/dashboard', function () {

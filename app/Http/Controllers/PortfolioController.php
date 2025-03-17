@@ -47,4 +47,20 @@ class PortfolioController extends Controller
             'title' => 'Contact',
         ]);
     }
+
+    public function proEntreprise(Request $request): Response
+    {
+        return Inertia::render('Portfolio', [
+            'content' => 'pro-entreprise',
+            'title' => 'Réalisation Pro Entreprise',
+        ]);
+    }
+
+    public function proCentre(Request $request): Response
+    {
+        return Inertia::render('Portfolio', [
+            'content' => 'pro-centre',
+            'title' => 'Réalisation Pro Centre',
+        ]);
+    }
 }

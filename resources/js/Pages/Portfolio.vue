@@ -24,7 +24,15 @@
         <div v-if="content === 'competences'" key="cv">
           <CompetencesBtsSio />
         </div>
-        <!-- Section Compétences BTS SIO -->
+        <!-- Section Réalisations Pro en entreprise -->
+        <div v-if="content === 'pro-entreprise'" key="pro-entreprise">
+          <ProEntreprise />
+        </div>
+        <!-- Section Réalisations Pro en centre -->
+        <div v-if="content === 'pro-centre'" key="pro-centre">
+          <ProCentre />
+        </div>
+        <!-- Section Cybersécurité -->
         <div v-if="content === 'cybersecurite'" key="cv">
           <Cybersecurite />
         </div>
@@ -49,6 +57,8 @@ import Footer from "@/Components/TailwindUI/Footer.vue";
 import scrollTop from "@/Components/Mine/ScrollTop.vue";
 import CvSection from "@/Components/TailwindUI/CvSection.vue";
 import CompetencesBtsSio from "@/Components/TailwindUI/CompetencesBtsSio.vue";
+import ProEntreprise from "@/Components/TailwindUI/ProEntreprise.vue";
+import ProCentre from "@/Components/TailwindUI/ProCentre.vue";
 import Cybersecurite from "@/Components/TailwindUI/Cybersecurite.vue";
 import Contact from "@/Components/TailwindUI/Contact.vue";
 

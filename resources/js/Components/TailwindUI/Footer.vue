@@ -65,6 +65,14 @@ const navigation = {
       href: route("portfolio.competences"),
     },
     {
+      name: "Réalisations Pro en entreprise",
+      href: route("portfolio.proEntreprise"),
+    },
+    {
+      name: "Réalisations Pro en centre",
+      href: route("portfolio.proCentre"),
+    },
+    {
       name: "Cybersécurité",
       href: route("portfolio.cybersecurite"),
     },
