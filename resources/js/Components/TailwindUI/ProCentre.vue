@@ -4,7 +4,7 @@
       <p
         class="max-w-2xl text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-6xl"
       >
-        Appli-Frais, Une application de gestion de frais professionnelle
+        AppliFrais, Une application de gestion de frais professionnelle.
       </p>
       <div
         class="relative mt-16 aspect-[2432/1442] h-[36rem] sm:h-auto sm:w-[calc(theme(maxWidth.7xl)-theme(spacing.16))]"
